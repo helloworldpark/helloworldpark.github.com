@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "임의의 분포의 난수 뽑기"
-date:   2016-12-18 22:15:27 +0900
+date:   2017-01-01 23:35:27 +0900
 categories: jekyll update
 ---
 
