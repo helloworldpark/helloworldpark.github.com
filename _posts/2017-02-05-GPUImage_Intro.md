@@ -34,6 +34,7 @@ GPUImageFilter *passthroughFilter = [[GPUImageFilter alloc] init];
 GPUImageGaussianBlurFilter *blurFilter = [[GPUImageGaussianBlurFilter alloc] init];
 GPUImageDifferenceBlendFilter *differenceBlendFilter = [[GPUImageDifferenceBlendFilter alloc] init];
 GPUImageAlphaBlendFilter *alphaBlendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+[passthroughFilter addTarget: blurFilter atTextureLocation:0];
 [passthroughFilter addTarget: differenceBlendFiler atTextureLocation:0];
 [blurFilter addTarget:differenceBlendFilter atTextureLocation:1];
 [passthroughFilter addTarget:alphaBlendFilter atTextureLocation:0];
