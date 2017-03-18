@@ -85,7 +85,7 @@ unsigned long long mulmod(unsigned long long a, unsigned long long b, unsigned l
 }
 {% endhighlight %}
 
-이 코드는 **분할과 정복**(Divide and Conquer)을 이용하여 구현되었습니다. 우리가 구하고자 하는 것은 $$ab \textrm{mod} n$$입니다. 그런데 다음이 성립합니다.
+이 코드는 **분할과 정복**(Divide and Conquer)을 이용하여 구현되었습니다. 우리가 구하고자 하는 것은 $$ab \,\, \textrm{mod} \,\, n$$입니다. 그런데 다음이 성립합니다.
 \begin{align}
 ab \,\, \textrm{mod} \,\, n = 
 \begin{cases}
