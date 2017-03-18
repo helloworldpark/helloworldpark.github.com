@@ -5,6 +5,10 @@ date:   2017-03-18 22:24:27 +0900
 categories: Mathematics
 ---
 
+1. [가챠의 폭력성 (1) - 이론편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha001.html)
+2. [가챠의 폭력성 (2) - 구현편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha002.html)
+3. [가챠의 폭력성 (3) - 분석편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha003.html)
+
 이번 편은 가챠 뽑기의 시뮬레이션을 구현하는 파트입니다. 자세한 코드는 [이 저장소](https://github.com/helloworldpark/nomoregatcha)에서 확인할 수 있습니다.
 
 ## 시뮬레이션으로 검증해보기
@@ -153,4 +157,4 @@ public class Gatcha
 }
 {% endhighlight %}
 
-핵심적인 로직은 뽑은 아이템들을 보관할 ```Set```인 ```appearedItems```의 갯수가 처음 주어진 아이템의 갯수와 같아질 때까지 반복문을 돌린다는 것입니다. 그래도 한 번만 테스트하면 정이 없으니, 정해진 횟수인 ```r```만큼 테스트를 해봅니다. 난수를 생성하는 것은 제가 기존에 만들었던 난수 생성 코드를 재활용하였습니다.
+핵심적인 로직은 뽑은 아이템들을 보관할 ```Set```인 ```appearedItems```의 갯수가 처음 주어진 아이템의 갯수와 같아질 때까지 반복문을 돌린다는 것입니다. 그래도 한 번만 테스트하면 정이 없으니, 정해진 횟수인 ```r```만큼 테스트를 해봅니다. 난수를 생성하는 것은 제가 기존에 만들었던 난수 생성 코드를 재활용하였습니다. 이제 결과는 [다음 포스트에서](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha003.html) 보겠습니다.

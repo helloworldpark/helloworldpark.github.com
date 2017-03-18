@@ -5,6 +5,10 @@ date:   2017-03-18 22:54:27 +0900
 categories: Mathematics
 ---
 
+1. [가챠의 폭력성 (1) - 이론편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha001.html)
+2. [가챠의 폭력성 (2) - 구현편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha002.html)
+3. [가챠의 폭력성 (3) - 분석편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha003.html)
+
 이번 편에서는 본격적으로 가챠의 폭력성을 분석해보겠습니다. 분석에 사용된 소스 코드는 [이 저장소](https://github.com/helloworldpark/nomoregatcha)에서 확인해주세요.
 
 ## 문제가 뭐였더라

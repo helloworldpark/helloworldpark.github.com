@@ -5,6 +5,10 @@ date:   2017-03-18 18:24:27 +0900
 categories: Mathematics
 ---
 
+1. [가챠의 폭력성 (1) - 이론편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha001.html)
+2. [가챠의 폭력성 (2) - 구현편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha002.html)
+3. [가챠의 폭력성 (3) - 분석편](https://helloworldpark.github.io/mathematics/2017/03/18/NoMoreGatcha003.html)
+
 ## 문제의 계기
 
 이 포스트는 게임회사에 다니는 제 친구의 질문에서 시작되었습니다.
