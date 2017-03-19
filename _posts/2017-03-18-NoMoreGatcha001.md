@@ -147,11 +147,12 @@ p_{n}(m) = \left( \frac{1}{n} \right)^{m} n! S(m-1, n-1)
 
 ### 조화급수와의 관계
 
-이 부분은 제가 아직 증명하지는 못 했지만, 엑셀로 계산되어 나온 결과를 분석하다가 알게 된 것입니다.
+~~이 부분은 제가 아직 증명하지는 못 했지만, 엑셀로 계산되어 나온 결과를 분석하다가 알게 된 것입니다.~~
+이 문제는 [Coupon Collector's Problem](https://en.wikipedia.org/wiki/Coupon_collector%27s_problem)이라는 문제로, 그 평균이 알려져 있습니다.
 
 \begin{align}
 M_{n} &= \sum_{k=0}^{n-1} (-1)^{k} \binom{n}{k+1} \left(n-1 + \frac{n}{k+1} \right) \left(1 - \frac{k+1}{n} \right)^{n-1}  \\\
-      &= 1 + n \sum_{k=1}^{n-1} \frac{1}{k}
+      &= n \sum_{k=1}^{n} \frac{1}{k}
 \end{align}
 
 \begin{array}{c|c|c|c}
@@ -172,3 +173,7 @@ n & M_{n} & M_{n} - M_{n-1} & M_{n} - 2 M_{n-1} + M_{n-2}  \\\
 ### 참고문헌
 
 Wikipedia, [Stirling Number of Second Kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind)
+
+Wikipedia, [Coupon collector's problem](https://en.wikipedia.org/wiki/Coupon_collector%27s_problem)
+
+Stack Exchange, [Probability distribution of the coupon collectors problem](http://math.stackexchange.com/questions/379525/probability-distribution-in-the-coupon-collectors-problem)
