@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 ## Pipenv 소개
-**Pipenv**는 정말 매력적인 파이썬 환경 구축 툴입니다. 개발 잘 하는 친구를 통해 추천받아서 쓰게 되었는데요, **virtualenv**와 **pip***으로 각각 해줘야 했던 환경 구축이 한결 편리해졌습니다. 사용법도 엄청 간단합니다.
+**Pipenv**는 정말 매력적인 파이썬 환경 구축 툴입니다. 개발 잘 하는 친구를 통해 추천받아서 쓰게 되었는데요, **virtualenv**와 **pip**으로 각각 해줘야 했던 환경 구축이 한결 편리해졌습니다. 사용법도 엄청 간단합니다.
 {% highlight bash %}
 pipenv --python 3.6 # Python 3.6을 인터프리터로
 pipenv install # 기본적인 환경을 만들어줘요
