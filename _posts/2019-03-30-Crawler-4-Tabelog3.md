@@ -285,6 +285,7 @@ def plot_scatter(columns, labels, title, log):
     # Linear Regression
     # scipy 덕분에 간편하게 회귀분석을 할 수 있습니다
     slope, intercept, r_value, p_value, std_err = linregress(x, y)
+    r_value *= r_value
     plt.plot(x, intercept + x * slope, color='#2c7bb6', alpha=1.0, linestyle='-', linewidth=2, label='fitted line', zorder=11)
     # 데이터에 로그를 씌웠느냐 말았느냐에 따라 텍스트를 다르게 보여줍니다
     if log[0] and log[1]:
@@ -350,6 +351,6 @@ def plot_scatter(columns, labels, title, log):
 <p align="right">
 <img src="/images/2019-03-30-Scatterplot of Tabelog's Rating vs Reviews.png"><br>
 </p>
-의외로 꽤 상관관계가 있어보입니다. $$R^{2}$$의 값도 0.6으로 꽤 높은 편이고, 시각적으로도 평가가 많으면 많을수록 평점도 높아보입니다. 제 추측으로는, 평가가 많다는 건 사람이 많이 간다는 간접증거가 될테고, 사람이 많이 간다는 건 그만큼 맛이 있기 때문이 아닐까 생각합니다만, 반박의 여지도 많은 추측이긴 합니다.
+의외로 꽤 상관관계가 있어보입니다. $$R^{2}$$의 값도 0.37로 아주 낮은 건 아니고, 시각적으로도 평가가 많으면 많을수록 평점도 높아보입니다. 제 추측으로는, 평가가 많다는 건 사람이 많이 간다는 간접증거가 될테고, 사람이 많이 간다는 건 그만큼 맛이 있기 때문이 아닐까 생각합니다만, 반박의 여지도 많은 추측이긴 합니다.
 
 사실 정말 알아보고 싶은 건 '평가가 많은 식당의 평점은 잘 변하지 않는다'입니다. 이걸 알고 싶은 이유는, 평점이 잘 변하지 않는다는 건 그만큼 많은 사람들이 그 평점에 동의한다는 뜻이라고 생각하기 때문입니다. 즉, 그 평점은 믿을만하다는 것이지요. 그런데 이를 알아보려면 평가의 수의 시계열 자료와 이에 대응하는 평점의 시계열 자료가 필요한데, 이는 정말 구하기 어렵습니다. 서버를 띄워놓고 크롤링이라도 해야 할까요. 아쉽지만 이 연구는 다른 누군가가 해주지 않을까 생각하며 포기해야 할 듯 합니다.
