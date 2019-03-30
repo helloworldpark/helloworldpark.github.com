@@ -8,6 +8,7 @@ categories: jekyll update
 1. [타베로그를 크롤링하기](https://helloworldpark.github.io/jekyll/update/2019/03/28/Crawler-4-Tabelog.html)
 2. [타베로그를 크롤링하기2 - Google Places API로 비교하기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog2.html)
 3. [타베로그를 크롤링하기3 - 타베로그 데이터 까보기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog3.html)
+4. [타베로그를 크롤링하기4 - 구글 데이터 까보기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog4.html)
 
 
 # 데이터를 드디어 다 모았습니다
@@ -207,11 +208,10 @@ plot_dist(columns=['price_night'],
           do_log=[False],
           title='Histogram of Tabelog Price at Night in Sapporo')
 ```
-<p align="left">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png" width="320" height="240"><br>
-</p>
-<p align="right">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png" width="320" height="240"><br>
+<p align="center">
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png" width="320" height="240">
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png" width="320" height="240">
+<br>
 </p>
 
 ### 평점과 평가 갯수의 관계
@@ -348,7 +348,7 @@ def plot_scatter(columns, labels, title, log):
     plt.savefig('tmp/{:s}.png'.format(title))
     plt.show()
 ```
-<p align="right">
+<p align="center">
 <img src="/images/2019-03-30-Scatterplot of Tabelog's Rating vs Reviews.png"><br>
 </p>
 의외로 꽤 상관관계가 있어보입니다. $$R^{2}$$의 값도 0.37로 아주 낮은 건 아니고, 시각적으로도 평가가 많으면 많을수록 평점도 높아보입니다. 제 추측으로는, 평가가 많다는 건 사람이 많이 간다는 간접증거가 될테고, 사람이 많이 간다는 건 그만큼 맛이 있기 때문이 아닐까 생각합니다만, 반박의 여지도 많은 추측이긴 합니다.
