@@ -7,6 +7,7 @@ categories: jekyll update
 
 1. [타베로그를 크롤링하기](https://helloworldpark.github.io/jekyll/update/2019/03/28/Crawler-4-Tabelog.html)
 2. [타베로그를 크롤링하기2 - Google Places API로 비교하기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog2.html)
+3. [타베로그를 크롤링하기3 - 데이터 까보기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog3.html)
 
 # 그런데 구글에 검색하면 되잖아요
 맞습니다. 비록 타베로그 한국어판 페이지가 있긴 하지만, 굳이 타베로그에 가서 힘들게 검색할 필요는 없습니다. 구글 지도로 훑어보던지, 식당 이름을 직접 검색해도 됩니다.

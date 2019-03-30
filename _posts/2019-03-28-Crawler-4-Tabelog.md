@@ -7,6 +7,7 @@ categories: jekyll update
 
 1. [타베로그를 크롤링하기](https://helloworldpark.github.io/jekyll/update/2019/03/28/Crawler-4-Tabelog.html)
 2. [타베로그를 크롤링하기2 - Google Places API로 비교하기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog2.html)
+3. [타베로그를 크롤링하기3 - 데이터 까보기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog3.html)
 
 # 조만간 삿포로에 가는데요
 제가 곧 삿포로에 갑니다. 하루 정도 묵을 예정인데, 기왕이면 맛있는 걸 먹고 싶습니다. 그래서 [타베로그](https://tabelog.com)에서 무엇을 먹을지 찾아봅니다. 어이쿠, 죄다 평점들이 3점대입니다. 우리나라에서 평점 3점대이면 그저 그런 집들인데, 여기에선 4점대를 찾아보기 힘듭니다. 과연 3점대의 음식점들은 걸러야 할까요?
