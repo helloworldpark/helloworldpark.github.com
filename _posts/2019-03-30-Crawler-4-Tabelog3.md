@@ -14,15 +14,15 @@ categories: jekyll update
 험난한 과정 끝에 30달러짜리 데이터를 모았습니다(왜 30달러인지는 **[타베로그를 크롤링하기2 - Google Places API로 비교하기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog2.html)** 를 참고하세요). 별거없는 코드이긴 한데 엑셀파일을 하나 떨궈주니 참 뿌듯하긴 하네요. 이제는 그 내용을 한번 까볼 시간입니다.
 
 데이터는 3월 23일 19시 30분 기준으로 타베로그에 등록된 삿포로시의 식당들을 검색하여 수집하였습니다. 타베로그 사이트의 한계로 최대 60페이지까지밖에 검색이 안 되어 총 1240개의 식당의 정보를 수집할 수 있었습니다. 크롤링한 식당의 이름을 바탕으로 Google Places API를 이용하여 구글에 등록된 정보를 수집하였습니다. 그 결과 최종적으로 총 1164개 식당의 정보를 수집하였습니다. 수집한 데이터의 항목은 아래와 같습니다.
- 1. name: 점포명
- 2. rating: 유저가 타베로그에 남긴 평점의 평균, 0점~5점, 결측치는 -1로 표시
- 3. reviews: 유저가 타베로그에 남긴 평가의 갯수
- 4. price_night: 점포의 저녁식사 가격대, 결측치는 -1로 표시
- 5. price_noon: 점포의 점심식사 가격대, 결측치는 -1로 표시
- 6. google_place_id: 구글 **Places API**에서 부여하는 ```placeid```. 분석에는 전혀 쓰이지 않을 예정이지만 억울해서 수집.
- 7. google_rating: 구글에 유저가 남긴 평점의 평균, 0점~5점, 결측치는 -1로 표시
- 8. google_user_ratings_total: 구글에 유저가 남긴 평가의 갯수
- 9. google_review_en: 수집한 리뷰 중 영어 리뷰의 갯수, 최대 5개
+ 1. ```name```: 점포명
+ 2. ```rating```: 유저가 타베로그에 남긴 평점의 평균, 0점~5점, 결측치는 -1로 표시
+ 3. ```reviews```: 유저가 타베로그에 남긴 평가의 갯수
+ 4. ```price_night```: 점포의 저녁식사 가격대, 결측치는 -1로 표시
+ 5. ```price_noon```: 점포의 점심식사 가격대, 결측치는 -1로 표시
+ 6. ```google_place_id```: 구글 **Places API**에서 부여하는 ```placeid```. 분석에는 전혀 쓰이지 않을 예정이지만 억울해서 수집
+ 7. ```google_rating```: 구글에 유저가 남긴 평점의 평균, 0점~5점, 결측치는 -1로 표시
+ 8. ```google_user_ratings_total```: 구글에 유저가 남긴 평가의 갯수
+ 9. ```google_review_en```: 수집한 리뷰 중 영어 리뷰의 갯수, 최대 5개
 
 # 사이트별로 분석해보기
 먼저, 각 사이트별로 데이터를 분석해보겠습니다.
@@ -78,7 +78,7 @@ plot_dist(columns=['rating'],
           )
 ```
 <p align="center">
-<img src="/images/2019-03-30-Histogram of Tabelog Ratings.png"><br>
+<img src="/images/2019-03-30-Histogram of Tabelog Ratings in Sapporo.png"><br>
 </p>
 첫째, 평점이 대부분 3점~4점대입니다. 어쩐지 타베로그에서는 죄다 3점대뿐이라더니. 3점대 가게라도 안심하고 들어가서 먹을 수 있을 것 같습니다.
 둘째, 쌍봉 분포를 보이고 있습니다. 3점대 초반의 가게와 3.5 후반의 가게로 양분화되어있습니다.
@@ -208,10 +208,10 @@ plot_dist(columns=['price_night'],
           title='Histogram of Tabelog Price at Night in Sapporo')
 ```
 <p align="left">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png"><br>
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png" width="360" height="240"><br>
 </p>
 <p align="right">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png"><br>
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png" width="360" height="240"><br>
 </p>
 
 ### 평점과 평가 갯수의 관계
