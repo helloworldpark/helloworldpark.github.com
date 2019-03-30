@@ -208,10 +208,10 @@ plot_dist(columns=['price_night'],
           title='Histogram of Tabelog Price at Night in Sapporo')
 ```
 <p align="left">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png" width="360" height="240"><br>
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Night in Sapporo.png" width="320" height="240"><br>
 </p>
 <p align="right">
-<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png" width="360" height="240"><br>
+<img src="/images/2019-03-30-Histogram of Tabelog Price at Noon in Sapporo.png" width="320" height="240"><br>
 </p>
 
 ### 평점과 평가 갯수의 관계
