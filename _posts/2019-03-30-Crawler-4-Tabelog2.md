@@ -5,6 +5,9 @@ date:   2019-03-30 09:00:00 +0900
 categories: jekyll update
 ---
 
+1. [타베로그를 크롤링하기](https://helloworldpark.github.io/jekyll/update/2019/03/28/Crawler-4-Tabelog.html)
+2. [타베로그를 크롤링하기2 - Google Places API로 비교하기](https://helloworldpark.github.io/jekyll/update/2019/03/30/Crawler-4-Tabelog2.html)
+
 # 그런데 구글에 검색하면 되잖아요
 맞습니다. 비록 타베로그 한국어판 페이지가 있긴 하지만, 굳이 타베로그에 가서 힘들게 검색할 필요는 없습니다. 구글 지도로 훑어보던지, 식당 이름을 직접 검색해도 됩니다.
 
@@ -20,32 +23,32 @@ API 문서를 읽어보니 저에게 필요한 건 [Places Search](https://devel
 ## 서비스 시작하기
 서비스를 사용해보겠습니다. **시작하기** 버튼을 누르면 아래와 같은 창이 뜹니다. 자기가 사용할 서비스만 신청합시다.
 <p align="center">
-<img src="/images/2019-03-03-01.png"><br>
+<img src="/images/2019-03-30-01.png"><br>
 </p>
 
 프로젝트 이름을 지어줍니다.
 <p align="center">
-<img src="/images/2019-03-03-02.png"><br>
+<img src="/images/2019-03-30-02.png"><br>
 </p>
 
 잠시 기다리면 결제 계정을 설정하라고 뜹니다. 저같은 경우에는 Google Cloud Engine을 사용하고 있어서 그 결제 계정에 연동했습니다만, 구글에 돈을 처음 헌납하는 분이시라면 신용카드 연동을 하셔야 합니다.
 <p align="center">
-<img src="/images/2019-03-03-03.png"><br>
+<img src="/images/2019-03-30-03.png"><br>
 </p>
 
 이제 API 키를 생성할 순간입니다.
 <p align="center">
-<img src="/images/2019-03-03-04.png"><br>
+<img src="/images/2019-03-30-04.png"><br>
 </p>
 
 API 키가 생성되었습니다. **소중히 보관**하셔야 합니다. 만약 유출되면 어마어마한 금액이 청구될 수도 있습니다.
 <p align="center">
-<img src="/images/2019-03-03-05.png"><br>
+<img src="/images/2019-03-30-05.png"><br>
 </p>
 
 생성 후에는 다음과 같은 화면이 지원됩니다. API 사용 현황을 시각적으로 확인할 수 있습니다.
 <p align="center">
-<img src="/images/2019-03-03-06.png"><br>
+<img src="/images/2019-03-30-06.png"><br>
 </p>
 
 ## API 키를 안전하게
@@ -109,5 +112,5 @@ if __name__ == '__main__':
      - ```fields``` 중 Atmosphere Data에 해당하는 필드 요청 시: 1000건당 5달러 추가
 다행히도 첫 사용자에게는 200달러짜리 쿠폰을 주기는 합니다. 그래서 200달러어치는 무료로 사용해볼 수 있는데요, 제가 개발하면서 아무 생각없이 API를 마구 호출하는 바람에 230달러가 청구되었습니다. 200달러어치 쿠폰이 있기에 망정이지 그게 없었으면 24만원이 청구될 뻔했습니다. 12,153건이나 호출했으니 그 정도 나올 수밖에요. 여러분들은 유료 API 사용하실 때 현명하게 잘 사용하셔야겠습니다.
 <p align="center">
-<img src="/images/2019-03-03-07.png"><br>
+<img src="/images/2019-03-30-07.png"><br>
 </p>
