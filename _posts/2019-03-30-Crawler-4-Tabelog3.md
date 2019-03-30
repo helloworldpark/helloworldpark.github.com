@@ -215,7 +215,7 @@ plot_dist(columns=['price_night'],
 </p>
 
 ### 평점과 평가 갯수의 관계
-그렇다면, 평점과 평가는 어떤 관계가 있을까요? 평가가 많은 가게는 평점이 높을까요? 낮을까요?
+그렇다면, 평점과 평가는 어떤 관계가 있을까요? 평가가 많은 가게는 평점이 높을까요, 낮을까요?
 
 ```python
 import matplotlib.pyplot as plt
