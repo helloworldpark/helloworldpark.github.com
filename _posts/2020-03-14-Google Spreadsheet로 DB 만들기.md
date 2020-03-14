@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Google Spreadsheet로 DB 만들기"
+title:  "Go로 Google Spreadsheet의 DB 클라이언트 만들기"
 date:   2020-03-14 00:00:00 +0900
 categories: jekyll update
 ---
